@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type"
+          content="text/html; charset=utf-8"/>
+    <title>Data entry form</title>
+</head>
+<body>
+<form action="controller-servlet" method="post">
+    <table>
+        <tr><td>Text color</td>
+            <td><select name="foreColor">
+                <option>red</option><option>green</option><option>black</option>
+            </select></td></tr>
+        <tr><td>Background color</td>
+            <td><select name="backColor">
+                <option>yellow</option><option>magenta</option><option>gray</option>
+            </select></td></tr>
+        <tr><td>Border visibility</td>
+            <td>
+                <input type="radio" name="border" value="visible" id="borderVisible" checked>
+                <label for="borderVisible">Visible</label>
+                <input type="radio" name="border" value="hidden" id="borderHidden">
+                <label for="borderHidden">Hidden</label>
+            </td></tr>
+        <tr><td colspan="2"><input type="submit" value="Send"></td></tr>
+    </table>
+</form>
+</body>
+</html>
